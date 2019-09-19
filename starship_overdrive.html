@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel Baccarella Dev Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/customStyle.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DB Dev</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="projects.html">Overview</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item active" href="Quazar.html">Quazar</a>
+                        <a class="dropdown-item" href="starship_overdrive.html">Starship Overdrive<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="#">Starship Theremin</a>
+                        <a class="dropdown-item" href="#">Metro Map Maker</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Source Engine Level Design</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Files/daniel_baccarella_résumé_3.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Nav Bar -->
+
+    <div class="pb-5 slanted-background">
+        <h1 class="w-100 text-center project-title">Starship Overdrive</h1>
+        <div class="d-flex justify-content-center">
+            <iframe width="1280" height="720"
+                    src="https://www.youtube.com/embed/tuMzPaFoc68">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="w-100 h-100 bg-dark pt-4 pb-4">
+        <div class="container text-white">
+            <div class="d-flex justify-content-around pt-2">
+                <h4><u>Java</u>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Java FX</u></h4>
+                <!--sometimes you just need to tab it up-->
+            </div>
+            <h1 class="mt-5 w-100 text-center">
+                <u>What It Is</u>
+            </h1>
+            <h4 class="mt-4 text-center">
+                Starship Overdrive is a personal project that was created to test the possibilities of JavaFX.
+                <br/><br/>
+                It is using a custom engine built on top of JavaFX which is mainly used for creating static desktop
+                applications. Due to this there was some interesting technical challenges that had to be overcome to
+                create a real time renderer.
+
+            </h4>
+            <h1 class="mt-5 w-100 text-center">
+                <u>What I Learned</u>
+            </h1>
+            <h4 class="mt-4 text-center">
+                Starship Overdrive was a really fun experiment to see how far I could push JavaFX.
+                <br/><br/>
+                I came across many problems when trying to get javafx to play nice with real time updates. I found out there
+                is a memory leak in the library when using images within nodes, so to get around that I needed to work with
+                object pooling.
+                <br/><br/>
+                I also implemented a 'biome' based infinite terrain generator. To do this I split the terrain up into 8 distinct
+                tiles, then randomly generated an integer value for each one based on the value of surrounding tiles. The integer value
+                is then used as a density value to determine how many sprites that area should contain. I then picked random spots
+                within the tiles for each of the sprites and picked the actual sprite images based on different markov chains
+                for each of the density regions. Finally I sorted all the sprites by Y index and placed them in the scene to
+                avoid incorrect Z placement.
+            </h4>
+
+            <h1 class="mt-5 w-100 text-center">
+                <u>Photos</u>
+            </h1>
+
+            <div class="d-flex flex-wrap justify-content-around mt-5 mb-5">
+                <input type="checkbox" id="photo-cb1" style="display: none"/>
+                    <label for="photo-cb1" class="project-photo-label">
+                        <img src="Photos/Starship_Overdrive/level1.PNG" class="img-fluid w-100 h-100"/>
+                    </label>
+                <input type="checkbox" id="photo-cb2" style="display: none"/>
+                <label for="photo-cb2" class="project-photo-label">
+                    <img src="Photos/Starship_Overdrive/Menu.PNG" class="img-fluid w-100 h-100"/>
+                </label>
+                <input type="checkbox" id="photo-cb3" style="display: none"/>
+                <label for="photo-cb3" class="project-photo-label">
+                    <img src="Photos/Starship_Overdrive/Meteor%20shower.PNG" class="img-fluid w-100 h-100"/>
+                </label>
+                <input type="checkbox" id="photo-cb4" style="display: none"/>
+                <label for="photo-cb4" class="project-photo-label">
+                    <img src="Photos/Starship_Overdrive/papajohns.PNG" class="img-fluid w-100 h-100"/>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar-->
+
+    <div class="bottom-bar w-100 bg-black d-flex align-content-stretch justify-content-center">
+        <a href="home.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="#">Contact</a>
+        <a href="Files/daniel_baccarella_résumé_3.pdf" target="_blank">Resume</a>
+    </div>
+
+</body>
+</html>

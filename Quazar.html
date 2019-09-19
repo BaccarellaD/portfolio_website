@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel Baccarella Dev Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/customStyle.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DB Dev</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="projects.html">Overview</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item active" href="Quazar.html">Quazar <span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="starship_overdrive.html">Starship Overdrive</a>
+                        <a class="dropdown-item" href="starship_theremin.html">Starship Theremin</a>
+                        <a class="dropdown-item" href="metro_map_maker.html">Metro Map Maker</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="source_engine.html">Source Engine Level Design</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Files/daniel_baccarella_résumé_3.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Nav Bar -->
+
+    <div class="pb-5 slanted-background">
+        <h1 class="w-100 text-center project-title">Quazar</h1>
+        <div class="d-flex justify-content-center">
+            <iframe width="1280" height="720"
+                    src="https://www.youtube.com/embed/n6I4j5SK-8U">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="w-100 h-100 bg-dark pt-4 pb-4">
+        <div class="container text-white">
+            <div class="d-flex justify-content-around pt-2">
+                <h4><u>Unity</u></h4>
+                <h4><u>C#</u></h4>
+                <h4><u>Leap Motion SDK</u></h4>
+                <h4><u>Oculus SDK</u></h4>
+            </div>
+            <h1 class="mt-5 w-100 text-center">
+                <u>What It Is</u>
+            </h1>
+            <h4 class="mt-4 text-center">
+                Quazar is a game developed for the Oculus Go and Cemtrex Smart Desk as part of my internship.
+                <br/><br/>
+                It is currently out on the Oculus Go store and is being shipped on every Smart Desk as part of the
+                included software suite.
+                <br/><br/>
+
+            </h4>
+            <h1 class="mt-5 w-100 text-center">
+                <u>What I Learned</u>
+            </h1>
+            <h4 class="mt-4 text-center">
+                Quazar was the first commercial game I made in Unity, and took 6 months to develop.
+                <br/><br/>
+                During that time I worked cooperatively with several programmers and artists to make the game into a reality.
+                <br/><br/>
+                Working with the team was a great way to practice a professional workflow. Everyday in the mornings we would
+                hold meetings and discuss the game and it's features. Working cooperatively led to some really cool features,
+                like tempest style geometric maps and brick-breaker power-ups that can be used by both the player and AI.
+            </h4>
+
+            <h1 class="mt-5 w-100 text-center">
+                <u>Photos</u>
+            </h1>
+
+            <div class="d-flex flex-wrap justify-content-around mt-5 mb-5">
+                <input type="checkbox" id="photo-cb1" style="display: none"/>
+                    <label for="photo-cb1" class="project-photo-label">
+                        <img src="Photos/Quazar/com.cemtrex.quazar-20181019-171440.jpg" class="img-fluid w-100 h-100"/>
+                    </label>
+                <input type="checkbox" id="photo-cb2" style="display: none"/>
+                <label for="photo-cb2" class="project-photo-label">
+                    <img src="Photos/Quazar/com.cemtrex.quazar-20181019-171404.jpg" class="img-fluid w-100 h-100"/>
+                </label>
+                <input type="checkbox" id="photo-cb3" style="display: none"/>
+                <label for="photo-cb3" class="project-photo-label">
+                    <img src="Photos/Quazar/Quazar_at_CES16x9.png" class="img-fluid w-100 h-100"/>
+                </label>
+                <input type="checkbox" id="photo-cb4" style="display: none"/>
+                <label for="photo-cb4" class="project-photo-label">
+                    <img src="Photos/Quazar/com.cemtrex.quazar-20181019-171503.jpg" class="img-fluid w-100 h-100"/>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar-->
+
+    <div class="bottom-bar w-100 bg-black d-flex align-content-stretch justify-content-center">
+        <a href="home.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="#">Contact</a>
+        <a href="Files/daniel_baccarella_résumé_3.pdf" target="_blank">Resume</a>
+    </div>
+
+</body>
+</html>
